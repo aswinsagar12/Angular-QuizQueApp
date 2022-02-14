@@ -1,0 +1,30 @@
+<div class="container py-5">
+  <h3>Welcome</h3>
+  <h1 class="display-5 fw-bold">Take your test</h1>
+  <p class="col-md-8 fs-4">
+    This Quiz will contain 9 question. Each Question holds 10 points
+  </p>
+
+  <h4>Rules</h4>
+  <ol>
+    <li>Correct Question gives you 10 points </li>
+    <li>Incorrect question gives you -10 point </li>
+    <li>You will have 10sec to answer</li>
+    <li>Refreshing the page will reset the Quiz</li>
+  </ol>
+  <h4 class="">Best Of Luck</h4>
+  <div class="name col-md-4 my-3">
+    <label>Enter Your Name </label>
+    <input #name type="text" class="form-controll" placeholder="Name..." />
+  </div>
+  <button
+    class="btn btn-primary btn-lg"
+    routerLink="/question"
+    (click)="startQuiz()"
+  >
+    Start the test
+  </button>
+</div>
+<div class="background">
+  <img src="{{ bgImage }}" alt="" srcset="" />
+</div>

@@ -1,0 +1,46 @@
+
+h1{
+  text-transform: capitalize;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 600;
+
+}
+
+h3{
+  color: #01A4FF;
+  text-transform: uppercase;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-size: large;
+  letter-spacing: 2px;
+}
+p,h4{
+  text-transform: capitalize;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+}
+.name label{
+  font-family: 'Poppins';
+  margin-right:25px;
+}
+input{
+  border-radius: 3px;
+  border: 1px solid #000;
+  padding:3px ;
+}
+button{
+  background-color: #01A4FF;
+  border: none;
+}
+img{
+  margin-left: 65%;
+  width: 30%;
+  margin-top: -35%;
+}
+.wave{
+  position: relative;
+ margin: 0;
+ margin-top: -22.3%;
+  min-width: 100%;
+  opacity: 0.2;
+}

@@ -1,0 +1,65 @@
+.container {
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.card {
+  // border: 3px solid rgb(0, 0, 0);
+  border: none;
+  border-radius: 15px;
+  max-width: 800px;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.logo {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 10px 0 10px 50px;
+  color: #000;
+}
+.logo span {
+  color: #01a4fe;
+}
+li {
+  cursor: pointer;
+  margin: 10px 0;
+  list-style: none;
+}
+.progress {
+  height: 3px;
+}
+.progress-bar {
+  color: #01a4fe;
+}
+button {
+  color: #01a4fe;
+}
+.option {
+  display: inline-block;
+
+  width: 250px;
+  justify-content: center;
+  margin-left: 32%;
+}
+
+.options {
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 4px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.options:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.img-fluid{
+  width:45%;
+}
+.result{
+  margin-left: 20px;
+}
