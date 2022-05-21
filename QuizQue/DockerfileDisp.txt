@@ -1,0 +1,40 @@
+# FROM node:latest as builder
+# #set the working directory
+# WORKDIR /app
+# #copy further files from current directory to working directory
+# COPY . .
+# RUN npm install
+# RUN mpm ng build
+
+# Stage 1: Compile and Build angular codebase
+
+# Use official node image as the base image
+FROM node:latest as build
+
+# Set the working directory
+WORKDIR /usr/local/app
+
+# Add the source code to app
+COPY ./ /usr/local/app/
+
+# Install all the dependencies
+RUN npm install
+
+# Generate the build of the application
+RUN npm run build
+
+#create the nginx stage for the serving the content
+FROM nginx:alpine
+# #set the wroking directory to inf=ginx assests directory
+# WORKDIR /usr/share/nginx/html
+
+#remove the default nginx static files
+# RUN rm -rf ./*
+
+#copy the static conetnt from builder storage
+COPY --from=builder /app/dist/quizque /usr/share/nginx/html
+
+# container run the nginx global direction and Deamon off
+
+# ENTRYPOINT [ "nginx","-g","deamon-off" ]
+
